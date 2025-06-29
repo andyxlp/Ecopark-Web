@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Ecopark Education Market Analysis</title>
+    <meta name="description" content="A detailed interactive report analyzing the education market in Ecopark, including competitor analysis and strategic opportunities.">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Improved Custom Styles -->
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Screen Reader Only */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        .sr-only:focus {
+            position: static;
+            width: auto;
+            height: auto;
+            padding: inherit;
+            margin: inherit;
+            overflow: visible;
+            clip: auto;
+            white-space: normal;
+        }
+        
+        /* Tab Styles */
+        .tab-active { 
+            border-color: #3b82f6; 
+            color: #3b82f6; 
+            background-color: #eff6ff; 
+        }
+        .tab-inactive { 
+            border-color: transparent; 
+            color: #6b7280; 
+        }
+        .tab-btn {
+            transition: all 0.2s ease-in-out;
+        }
+        .tab-btn:hover {
+            color: #3b82f6;
+            border-color: #93c5fd;
+        }
+        .tab-btn:focus {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        
+        /* Animation */
+        .fade-in { 
+            animation: fadeIn 0.5s ease-in-out; 
+        }
+        @keyframes fadeIn { 
+            from { 
+                opacity: 0; 
+                transform: translateY(10px); 
+            } 
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            } 
+        }
+        
+        /* Content Cards */
+        .content-card { 
+            background-color: white; 
+            border-radius: 0.75rem; 
+            border: 1px solid #e5e7eb; 
+            padding: 1.5rem;
+            transition: box-shadow 0.2s ease-in-out;
+        }
+        .content-card:hover {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Accordion Styles */
+        .accordion-button { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            width: 100%; 
+            text-align: left; 
+            background: #f9fafb; 
+            padding: 1rem; 
+            border-radius: 0.5rem; 
+            border: 1px solid #e5e7eb;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .accordion-button:hover {
+            background-color: #f3f4f6;
+            border-color: #d1d5db;
+        }
+        .accordion-button:focus {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+            background-color: #f3f4f6;
+        }
+        .accordion-button.active {
+            background-color: #eff6ff;
+            border-color: #3b82f6;
+            color: #1e40af;
+        }
+        .accordion-content { 
+            display: none; 
+            padding: 1rem; 
+            border: 1px solid #e5e7eb; 
+            border-top: 0; 
+            border-radius: 0 0 0.5rem 0.5rem;
+            background-color: #fefefe;
+        }
+        .accordion-arrow { 
+            transition: transform 0.3s ease-in-out;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        .accordion-button.active .accordion-arrow { 
+            transform: rotate(180deg);
+            color: #1e40af;
+        }
+        
+        /* Accessibility improvements */
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in,
+            .accordion-arrow,
+            .tab-btn,
+            .accordion-button {
+                animation: none;
+                transition: none;
+            }
+        }
+        
+        @media (prefers-contrast: high) {
+            .tab-active {
+                border-width: 3px;
+            }
+            .accordion-button:focus,
+            .tab-btn:focus {
+                outline-width: 3px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded">
+        Skip to main content
+    </a>
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+                Ecopark Education Market Analysis
+            </h1>
+            <p class="text-lg text-gray-600">
+                A Detailed Interactive Report Based on Provided Intelligence
+            </p>
+        </header>
+
+        <main id="main-content" class="bg-white rounded-xl shadow-lg border border-gray-200 p-2 md:p-4">
+            <!-- Tab Navigation with improved accessibility -->
+            <div class="border-b border-gray-200 mb-6">
+                <nav class="flex flex-wrap -mb-px" role="tablist" aria-label="Market Analysis Sections">
+                    <button 
+                        data-tab="overview" 
+                        class="tab-btn tab-active text-sm md:text-base font-medium text-center border-b-2 py-3 px-4"
+                        role="tab"
+                        aria-selected="true"
+                        aria-controls="overview-content"
+                        id="overview-tab">
+                        Market Overview
+                    </button>
+                    <button 
+                        data-tab="ecorobo" 
+                        class="tab-btn tab-inactive text-sm md:text-base font-medium text-center border-b-2 py-3 px-4"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="ecorobo-content"
+                        id="ecorobo-tab">
+                        Ecorobo Analysis
+                    </button>
+                    <button 
+                        data-tab="evo" 
+                        class="tab-btn tab-inactive text-sm md:text-base font-medium text-center border-b-2 py-3 px-4"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="evo-content"
+                        id="evo-tab">
+                        EVO Eduschool Analysis
+                    </button>
+                    <button 
+                        data-tab="opportunities" 
+                        class="tab-btn tab-inactive text-sm md:text-base font-medium text-center border-b-2 py-3 px-4"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="opportunities-content"
+                        id="opportunities-tab">
+                        Strategic Opportunities
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Tab Content Container -->
+            <div id="tab-content" class="p-2 md:p-4">
+                <!-- Loading indicator -->
+                <div id="loading-indicator" class="hidden text-center py-8">
+                    <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                    <p class="mt-2 text-gray-600">Loading content...</p>
+                </div>
+
+                <!-- Error message -->
+                <div id="error-message" class="hidden bg-red-50 border border-red-200 rounded-lg p-4 text-red-800">
+                    <h3 class="font-semibold">Error Loading Content</h3>
+                    <p>Please refresh the page and try again.</p>
+                </div>
+
+                <!-- Tab Panels -->
+                <div id="overview-content" 
+                     class="tab-panel fade-in space-y-6" 
+                     role="tabpanel" 
+                     aria-labelledby="overview-tab">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+
+                <div id="ecorobo-content" 
+                     class="tab-panel hidden fade-in space-y-6" 
+                     role="tabpanel" 
+                     aria-labelledby="ecorobo-tab">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+
+                <div id="evo-content" 
+                     class="tab-panel hidden fade-in space-y-6" 
+                     role="tabpanel" 
+                     aria-labelledby="evo-tab">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+
+                <div id="opportunities-content" 
+                     class="tab-panel hidden fade-in space-y-6" 
+                     role="tabpanel" 
+                     aria-labelledby="opportunities-tab">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Improved JavaScript -->
+    <script>
+        // Improved Tab Manager with accessibility
+        class TabManager {
+            constructor() {
+                this.tabNav = document.querySelector('[role="tablist"]');
+                this.tabContent = document.getElementById('tab-content');
+                this.tabs = Array.from(this.tabNav.querySelectorAll('.tab-btn'));
+                this.panels = Array.from(this.tabContent.querySelectorAll('.tab-panel'));
+                this.currentTab = 0;
+                this.init();
+            }
+
+            init() {
+                this.setupAccessibility();
+                this.bindEvents();
+                this.showTab(0);
+            }
+
+            setupAccessibility() {
+                this.tabs.forEach((tab, index) => {
+                    tab.setAttribute('tabindex', index === 0 ? '0' : '-1');
+                    tab.setAttribute('aria-selected', index === 0 ? 'true' : 'false');
+                });
+            }
+
+            bindEvents() {
+                this.tabNav.addEventListener('click', (e) => {
+                    const clickedTab = e.target.closest('.tab-btn');
+                    if (clickedTab) {
+                        e.preventDefault();
+                        const tabIndex = this.tabs.indexOf(clickedTab);
+                        if (tabIndex !== -1) {
+                            this.showTab(tabIndex);
+                        }
+                    }
+                });
+
+                this.tabNav.addEventListener('keydown', (e) => this.handleKeyDown(e));
+            }
+
+            handleKeyDown(event) {
+                const currentTabIndex = this.tabs.indexOf(document.activeElement);
+                if (currentTabIndex === -1) return;
+
+                let newTabIndex = currentTabIndex;
+
+                switch (event.key) {
+                    case 'ArrowRight':
+                    case 'ArrowDown':
+                        event.preventDefault();
+                        newTabIndex = (currentTabIndex + 1) % this.tabs.length;
+                        break;
+                    case 'ArrowLeft':
+                    case 'ArrowUp':
+                        event.preventDefault();
+                        newTabIndex = currentTabIndex === 0 ? this.tabs.length - 1 : currentTabIndex - 1;
+                        break;
+                    case 'Home':
+                        event.preventDefault();
+                        newTabIndex = 0;
+                        break;
+                    case 'End':
+                        event.preventDefault();
+                        newTabIndex = this.tabs.length - 1;
+                        break;
+                    case 'Enter':
+                    case ' ':
+                        event.preventDefault();
+                        this.showTab(currentTabIndex);
+                        return;
+                }
+
+                this.tabs[newTabIndex].focus();
+                this.showTab(newTabIndex);
+            }
+
+            showTab(index) {
+                try {
+                    this.updateTabStates(index);
+                    this.updatePanelVisibility(index);
+                    this.currentTab = index;
+                    this.announceTabChange(index);
+                } catch (error) {
+                    console.error('Error showing tab:', error);
+                }
+            }
+
+            updateTabStates(activeIndex) {
+                this.tabs.forEach((tab, index) => {
+                    const isActive = index === activeIndex;
+                    tab.setAttribute('aria-selected', isActive.toString());
+                    tab.setAttribute('tabindex', isActive ? '0' : '-1');
+                    
+                    if (isActive) {
+                        tab.classList.remove('tab-inactive');
+                        tab.classList.add('tab-active');
+                    } else {
+                        tab.classList.remove('tab-active');
+                        tab.classList.add('tab-inactive');
+                    }
+                });
+            }
+
+            updatePanelVisibility(activeIndex) {
+                this.panels.forEach((panel, index) => {
+                    if (index === activeIndex) {
+                        panel.classList.remove('hidden');
+                        panel.setAttribute('aria-hidden', 'false');
+                        panel.classList.add('fade-in');
+                    } else {
+                        panel.classList.add('hidden');
+                        panel.setAttribute('aria-hidden', 'true');
+                        panel.classList.remove('fade-in');
+                    }
+                });
+            }
+
+            announceTabChange(index) {
+                const tab = this.tabs[index];
+                const announcement = document.createElement('div');
+                announcement.setAttribute('aria-live', 'polite');
+                announcement.className = 'sr-only';
+                announcement.textContent = `${tab.textContent.trim()} tab selected`;
+                document.body.appendChild(announcement);
+                setTimeout(() => document.body.removeChild(announcement), 1000);
+            }
+        }
+
+        // Improved Accordion Manager with accessibility
+        class AccordionManager {
+            constructor() {
+                this.accordions = document.querySelectorAll('.accordion-item');
+                this.init();
+            }
+
+            init() {
+                this.accordions.forEach((accordion, index) => {
+                    this.setupAccordion(accordion, index);
+                });
+            }
+
+            setupAccordion(accordion, index) {
+                const button = accordion.querySelector('.accordion-button');
+                const content = accordion.querySelector('.accordion-content');
+                
+                if (!button || !content) return;
+
+                const contentId = `accordion-content-${index}`;
+                const buttonId = `accordion-button-${index}`;
+                
+                button.setAttribute('aria-expanded', 'false');
+                button.setAttribute('aria-controls', contentId);
+                button.setAttribute('id', buttonId);
+                
+                content.setAttribute('id', contentId);
+                content.setAttribute('aria-labelledby', buttonId);
+                content.setAttribute('role', 'region');
+
+                button.addEventListener('click', (e) => this.toggle(button, content, e));
+                button.addEventListener('keydown', (e) => this.handleKeydown(button, content, e));
+            }
+
+            toggle(button, content, event) {
+                event.preventDefault();
+                
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                const newState = !isExpanded;
+
+                button.setAttribute('aria-expanded', newState.toString());
+                button.classList.toggle('active', newState);
+                
+                if (newState) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+
+                this.announceStateChange(button, newState);
+            }
+
+            handleKeydown(button, content, event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    this.toggle(button, content, event);
+                }
+                
+                if (event.key === 'Escape' && button.getAttribute('aria-expanded') === 'true') {
+                    this.toggle(button, content, event);
+                }
+            }
+
+            announceStateChange(button, isExpanded) {
+                const announcement = document.createElement('div');
+                announcement.setAttribute('aria-live', 'polite');
+                announcement.className = 'sr-only';
+                
+                const buttonText = button.querySelector('span')?.textContent || 'Section';
+                announcement.textContent = `${buttonText} ${isExpanded ? 'expanded' : 'collapsed'}`;
+                
+                document.body.appendChild(announcement);
+                setTimeout(() => document.body.removeChild(announcement), 1000);
+            }
+        }
+
+        // Application initialization
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                console.log('Initializing Ecopark Education Market Analysis...');
+                
+                // Load original content
+                loadOriginalContent();
+                
+                // Initialize components
+                new TabManager();
+                
+                // Wait for content to load, then initialize accordions
+                setTimeout(() => {
+                    new AccordionManager();
+                }, 100);
+                
+                // Setup accessibility enhancements
+                setupAccessibilityEnhancements();
+                
+                console.log('Application initialized successfully');
+            } catch (error) {
+                console.error('Error initializing application:', error);
+            }
+        });
+
+        function loadOriginalContent() {
+            // Load the updated comprehensive content into the panels
+            const originalContent = {
+                overview: `
+                    <div class="content-card">
+                        <h3 class="font-bold text-xl text-blue-800 mb-3">Executive Summary: The Competitive Landscape</h3>
+                        <p class="mb-4">The Ecopark urban area represents a unique and high-potential market for premium educational services. It is not a typical district but a master-planned "green city" meticulously designed to attract affluent, well-educated families who prioritize a holistic and high-quality lifestyle.</p>
+                        
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4">
+                            <h4 class="font-semibold text-blue-800 mb-2">Key Market Characteristics</h4>
+                            <ul class="list-disc list-inside space-y-1 text-blue-900">
+                                <li><strong>Intellectual Urban Area:</strong> Over 20 educational institutions, from international preschools to the 70-million-dollar British University Vietnam (BUV) campus</li>
+                                <li><strong>High Disposable Income:</strong> Real estate prices range from 1.4 billion VND for apartments to over 40 billion VND for villas</li>
+                                <li><strong>Premium Education Investment:</strong> Exceptionally high willingness to invest in premium education for children</li>
+                            </ul>
+                        </div>
+                        
+                        <p class="mb-3">The competitive environment is characterized by two distinct tiers that create both challenges and opportunities for new entrants.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Two-Tier Competitive Environment</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-purple-50 p-4 rounded-lg">
+                                        <h5 class="font-semibold text-purple-800 mb-2">Tier 1: "Ecopark Premium" Standard</h5>
+                                        <p class="text-sm mb-2">Dominated by high-fee, prestigious K-12 international and bilingual schools:</p>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Edison Schools</li>
+                                            <li>Đoàn Thị Điểm Greenfield</li>
+                                            <li>Chadwick International</li>
+                                        </ul>
+                                        <p class="text-sm mt-2 italic">These institutions set the de facto benchmark for facility quality, branding, and educational philosophy.</p>
+                                    </div>
+                                    <div class="bg-green-50 p-4 rounded-lg">
+                                        <h5 class="font-semibold text-green-800 mb-2">Tier 2: After-School Enrichment</h5>
+                                        <p class="text-sm mb-2">Vibrant but heavily saturated segment:</p>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>English:</strong> Vicare, Summit, Ocean Edu</li>
+                                            <li><strong>Math:</strong> Mathnasium, Anicca Education</li>
+                                            <li><strong>Opportunity:</strong> Technology and STEAM specialist gap</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="mt-3 text-sm bg-yellow-50 p-3 rounded">Success requires understanding community values, premium physical presence, and clear differentiation from established players.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Demographics: Affluent, Education-Focused Families</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="mb-3">Ecopark residents represent a unique demographic profile that drives educational demand:</p>
+                                <div class="space-y-3">
+                                    <div class="bg-blue-50 p-3 rounded">
+                                        <h5 class="font-semibold text-blue-800">Financial Profile</h5>
+                                        <p class="text-sm">High disposable income evidenced by premium real estate investment and luxury amenities like golf courses</p>
+                                    </div>
+                                    <div class="bg-green-50 p-3 rounded">
+                                        <h5 class="font-semibold text-green-800">Family Orientation</h5>
+                                        <p class="text-sm">Strong focus on family well-being, safety, and nature-centric upbringing. Community centered around children's development</p>
+                                    </div>
+                                    <div class="bg-purple-50 p-3 rounded">
+                                        <h5 class="font-semibold text-purple-800">Educational Investment</h5>
+                                        <p class="text-sm">Education is a primary driver for choosing Ecopark. Parents view supplemental education as essential infrastructure</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Parental Demand: The "Educational Arms Race"</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="mb-3">The high concentration of affluent, achievement-oriented parents has created a hyper-competitive social environment described as an "educational arms race".</p>
+                                <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-3">
+                                    <h5 class="font-semibold text-red-800 mb-2">Competitive Pressure</h5>
+                                    <p class="text-sm">Parents feel compelled to provide every possible advantage, making supplemental education feel like a necessity, not a luxury</p>
+                                </div>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h5 class="font-semibold mb-2">6 Key Development Indicators</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>IQ:</strong> Intelligence development</li>
+                                            <li><strong>EQ:</strong> Emotional intelligence</li>
+                                            <li><strong>SQ:</strong> Social skills</li>
+                                            <li><strong>CQ:</strong> Creativity</li>
+                                            <li><strong>Plus:</strong> Physical & spiritual wellness</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold mb-2">Market Implications</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Demand for tangible outcomes and achievements</li>
+                                            <li>Focus on future-ready skills</li>
+                                            <li>Competition training and certifications valued</li>
+                                            <li>Holistic development programs preferred</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Education Landscape: Two Tiers of Competition</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>The competitive environment is characterized by two distinct tiers:</p>
+                                <ul class="mt-2 list-disc list-inside space-y-2">
+                                    <li><strong>Tier 1 (The "Ecopark Premium" Standard):</strong> Dominated by high-fee, prestigious K-12 international and bilingual schools like Edison Schools, Đoàn Thị Điểm Greenfield, and Chadwick International. These institutions set the de facto benchmark for facility quality, branding, and educational philosophy.</li>
+                                    <li><strong>Tier 2 (Saturated After-School Market):</strong> A vibrant but crowded segment of after-school enrichment centers. This area is heavily saturated with English providers (Vicare, Summit, Ocean Edu) and Math tutoring centers (Mathnasium, Anicca Education), creating a distinct opportunity for a differentiated Technology and STEAM specialist.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Strategic Context: The Paradox of Success</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="mb-3">Ecopark's rapid growth has created a "paradox of success": the very factors driving its appeal (growth, amenities) threaten its original brand promise of tranquility, leading to urban challenges like traffic.</p>
+                                
+                                <div class="bg-orange-50 border-l-4 border-orange-400 p-4 mb-4">
+                                    <h5 class="font-semibold text-orange-800 mb-2">The Growth Challenge</h5>
+                                    <p class="text-sm">The success and expansion of Ecopark is transforming it from a tranquil "green city" into a major urban center with accompanying urban challenges.</p>
+                                </div>
+                                
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h5 class="font-semibold mb-2 text-blue-800">Strategic Implications</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Convenience becomes a high-value commodity</li>
+                                            <li>Parents are time-poor and seek to minimize travel</li>
+                                            <li>Location strategy is critical for success</li>
+                                            <li>Community integration becomes more important</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold mb-2 text-green-800">Competitive Advantages</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Decentralized, multi-location models benefit</li>
+                                            <li>Local community presence valued</li>
+                                            <li>Reduced travel time is competitive differentiator</li>
+                                            <li>Destination experiences must justify travel</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-4 p-3 bg-gray-50 rounded">
+                                    <p class="text-sm italic">This paradox creates distinct opportunities for different business models: convenience-focused providers can capitalize on proximity, while premium "destination" providers must offer experiences worth the journey.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                ecorobo: `
+                    <div class="content-card">
+                        <h3 class="font-bold text-xl text-blue-800 mb-3">Ecorobo: The Niche Robotics Specialist</h3>
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4">
+                            <h4 class="font-semibold text-blue-800 mb-2">Core Business Model</h4>
+                            <p class="text-blue-900">Specialized after-school enrichment center ("CLB Ngoại khóa") designed to supplement—not replace—formal schooling with high-demand robotics and STEAM skills.</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-purple-800 mb-2">Value Proposition</h4>
+                                <p class="text-sm mb-2"><strong>"Path to Prestige"</strong> through competition training</p>
+                                <ul class="text-sm list-disc list-inside space-y-1">
+                                    <li>Training ground for champions</li>
+                                    <li>VEX & WRO competition preparation</li>
+                                    <li>Tangible, verifiable achievements</li>
+                                    <li>University application portfolio enhancement</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-green-800 mb-2">Target Customer</h4>
+                                <p class="text-sm mb-2"><strong>"Aspiring Competitor Parent"</strong></p>
+                                <ul class="text-sm list-disc list-inside space-y-1">
+                                    <li>Views extracurriculars as competitive advantage</li>
+                                    <li>Values measurable outcomes</li>
+                                    <li>Seeks prestigious achievements</li>
+                                    <li>Invests in future academic success</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-yellow-50 border border-yellow-200 rounded p-3">
+                            <p class="text-sm"><strong>Strategic Position:</strong> Ecorobo doesn't compete on the scale of comprehensive K-12 education but rather captures a specific segment of the family's "education budget" without needing to compete at the scale of a full educational institution.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Curriculum & Programs: Competition-Focused Architecture</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="mb-4">
+                                    <h5 class="font-semibold text-blue-800 mb-2">Platform-Based Curriculum</h5>
+                                    <p class="text-sm mb-3">Built around globally recognized competitive robotics platforms that are staples in the competitive robotics scene:</p>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="bg-blue-50 p-3 rounded">
+                                            <h6 class="font-semibold text-blue-700 mb-2">VEX Platforms</h6>
+                                            <ul class="text-sm list-disc list-inside mt-1">
+                                                <li>VEX 123 (Ages 4-6)</li>
+                                                <li>VEX GO (Ages 6-10)</li>
+                                                <li>VEX IQ (Ages 10-15)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-green-50 p-3 rounded">
+                                            <h6 class="font-semibold text-green-700 mb-2">LEGO Platforms</h6>
+                                            <ul class="text-sm list-disc list-inside mt-1">
+                                                <li>WeDo 2.0 (Ages 6-10)</li>
+                                                <li>Mindstorms EV3 (Ages 10-15)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h5 class="font-semibold text-purple-800 mb-2">Age-Stratified Learning Pathway</h5>
+                                    <div class="space-y-3">
+                                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3">
+                                            <h6 class="font-semibold text-yellow-800">Ages 4-6: "Inspiring Technology Love"</h6>
+                                            <p class="text-sm">Simple, fun activities using VEX 123 to spark interest and foundational play-based learning</p>
+                                        </div>
+                                        <div class="bg-blue-50 border-l-4 border-blue-400 p-3">
+                                            <h6 class="font-semibold text-blue-800">Ages 6-10: Foundation Building</h6>
+                                            <p class="text-sm">Focus on exploration and core skills: assembly, programming, teamwork using VEX GO and LEGO WeDo 2.0</p>
+                                        </div>
+                                        <div class="bg-red-50 border-l-4 border-red-400 p-3">
+                                            <h6 class="font-semibold text-red-800">Ages 10-15: Competition Readiness</h6>
+                                            <p class="text-sm">Advanced design, optimization, and competition preparation with VEX IQ and LEGO Mindstorms EV3</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-purple-50 border border-purple-200 rounded p-4">
+                                    <h5 class="font-semibold text-purple-800 mb-2">Competition Focus: The Differentiator</h5>
+                                    <p class="text-sm mb-2">Ecorobo positions itself as a training ground for major robotics competitions:</p>
+                                    <ul class="text-sm list-disc list-inside space-y-1">
+                                        <li><strong>VEX Robotics World Championship</strong></li>
+                                        <li><strong>World Robot Olympiad (WRO)</strong></li>
+                                        <li><strong>FIRST LEGO League</strong></li>
+                                    </ul>
+                                    <p class="text-sm mt-2 italic">This competition focus is a powerful marketing tool, appealing to parents who want tangible, prestigious achievements for their children.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Pricing Strategy & Customer Segments</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-green-50 p-4 rounded-lg">
+                                        <h5 class="font-semibold text-green-800 mb-2">Pricing Structure</h5>
+                                        <div class="space-y-2 text-sm">
+                                            <p><strong>Strategy:</strong> Private pricing (not publicly listed)</p>
+                                            <p><strong>Positioning:</strong> Mid-to-premium price point</p>
+                                            <p><strong>Justification:</strong> Expensive VEX/LEGO hardware specialization</p>
+                                            <p><strong>Acquisition:</strong> Free trial class model</p>
+                                        </div>
+                                        <div class="mt-3 p-2 bg-green-100 rounded">
+                                            <p class="text-xs italic">Dual-location model and high-value competition training suggest premium positioning</p>
+                                        </div>
+                                    </div>
+                                    <div class="bg-blue-50 p-4 rounded-lg">
+                                        <h5 class="font-semibold text-blue-800 mb-2">Target Demographics</h5>
+                                        <div class="space-y-2 text-sm">
+                                            <p><strong>Age Range:</strong> 4-15 years</p>
+                                            <p><strong>Segments:</strong> Preschool, primary, middle school</p>
+                                            <p><strong>Geographic:</strong> Ecopark residential community</p>
+                                            <p><strong>Psychographic:</strong> Achievement-oriented families</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-purple-50 border-l-4 border-purple-400 p-4 mb-4">
+                                    <h5 class="font-semibold text-purple-800 mb-2">Primary Customer Persona: "Aspiring Competitor Parent"</h5>
+                                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                        <div>
+                                            <h6 class="font-semibold mb-1">Motivations</h6>
+                                            <ul class="list-disc list-inside space-y-1">
+                                                <li>Views extracurriculars as competitive advantage</li>
+                                                <li>Values tangible achievements</li>
+                                                <li>Seeks measurable ROI (awards, certificates)</li>
+                                                <li>Wants portfolio enhancement for children</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h6 class="font-semibold mb-1">Characteristics</h6>
+                                            <ul class="list-disc list-inside space-y-1">
+                                                <li>High achievement orientation</li>
+                                                <li>Education-focused investment mindset</li>
+                                                <li>Values logic and creativity development</li>
+                                                <li>Responds to success stories</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-yellow-50 border border-yellow-200 rounded p-4">
+                                    <h5 class="font-semibold text-yellow-800 mb-2">Marketing Appeal Strategy</h5>
+                                    <p class="text-sm mb-2">Marketing collateral dominated by "Vinh Danh" (Honoring) announcements celebrating student competition victories.</p>
+                                    <p class="text-sm italic">Targets parents seeking more than just "learning to code" - they want prestigious achievements that distinguish their children in competitive academic environments.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Brand Perception & Community Reputation</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="grid md:grid-cols-3 gap-4 mb-4">
+                                    <div class="bg-blue-50 p-3 rounded">
+                                        <h5 class="font-semibold text-blue-800 mb-2">Digital Presence</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Active online presence via website</li>
+                                            <li>Template-based site design</li>
+                                            <li>Focus on content over web sophistication</li>
+                                            <li>Event promotions and announcements</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-green-50 p-3 rounded">
+                                        <h5 class="font-semibold text-green-800 mb-2">Community Standing</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Established Ecopark community member</li>
+                                            <li>Organizes significant local events</li>
+                                            <li>"Ecorobo Robot Day 2024" success</li>
+                                            <li>Strong student enrollment base</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-purple-50 p-3 rounded">
+                                        <h5 class="font-semibold text-purple-800 mb-2">Physical Presence</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Dual-location strategy</li>
+                                            <li>Swanlake Onsen main center</li>
+                                            <li>Thủy Nguyên Competition Center</li>
+                                            <li>Professional, modern facilities</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-orange-50 border-l-4 border-orange-400 p-4">
+                                    <h5 class="font-semibold text-orange-800 mb-2">Strategic Location Analysis</h5>
+                                    <p class="text-sm mb-2">The dual-location strategy directly addresses Ecopark's geographic challenge:</p>
+                                    <ul class="text-sm list-disc list-inside space-y-1">
+                                        <li><strong>Convenience Factor:</strong> Reduces travel time for busy parents</li>
+                                        <li><strong>Market Coverage:</strong> Serves different residential phases</li>
+                                        <li><strong>Specialization:</strong> Separate teaching and competition centers show serious investment</li>
+                                        <li><strong>Competitive Advantage:</strong> Location accessibility over destination experience</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Operations & Marketing Strategy</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-blue-50 p-4 rounded">
+                                        <h5 class="font-semibold text-blue-800 mb-2">Operational Model</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Schedule:</strong> After-school hours and weekends</li>
+                                            <li><strong>Facilities:</strong> Modern, professionally designed spaces</li>
+                                            <li><strong>Competition Center:</strong> Intensive training camps during competition seasons</li>
+                                            <li><strong>Location Strategy:</strong> Strategic shophouse locations in high-density residential zones</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-green-50 p-4 rounded">
+                                        <h5 class="font-semibold text-green-800 mb-2">Marketing Channels</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Event-Driven:</strong> "Ecorobo Robot Day" community events</li>
+                                            <li><strong>Success Showcasing:</strong> "Vinh Danh" student achievement announcements</li>
+                                            <li><strong>Word-of-Mouth:</strong> Most powerful channel in tight-knit community</li>
+                                            <li><strong>Trial Classes:</strong> Free trial sessions for new student acquisition</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-gray-50 border border-gray-200 rounded p-4">
+                                    <h5 class="font-semibold text-gray-800 mb-2">Community Integration Strategy</h5>
+                                    <p class="text-sm mb-2">Ecorobo's marketing success stems from deep community integration:</p>
+                                    <ul class="text-sm list-disc list-inside space-y-1">
+                                        <li>Active participation in local events and festivals</li>
+                                        <li>Parent testimonials highlighting child development</li>
+                                        <li>Regular competition achievements create buzz</li>
+                                        <li>Local events generate natural customer acquisition</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Competitive Advantages & Strategic Analysis</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-green-50 p-4 rounded">
+                                        <h5 class="font-semibold text-green-800 mb-2">Key Strengths</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Niche Specialization:</strong> Highly focused competition-oriented robotics</li>
+                                            <li><strong>Tangible Outcomes:</strong> Awards and achievements parents can market</li>
+                                            <li><strong>Local Brand Identity:</strong> Established, hyper-local presence</li>
+                                            <li><strong>Convenience Factor:</strong> Multi-location accessibility</li>
+                                            <li><strong>Competition Credibility:</strong> Dual-center model shows serious commitment</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-red-50 p-4 rounded">
+                                        <h5 class="font-semibold text-red-800 mb-2">Apparent Weaknesses</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Narrow Curriculum:</strong> Heavy focus on specific hardware platforms</li>
+                                            <li><strong>Limited Scope:</strong> May constrain exposure to broader technology fields</li>
+                                            <li><strong>Scaling Challenges:</strong> Specialized model harder to scale than generalized curriculum</li>
+                                            <li><strong>Age Limitations:</strong> Doesn't serve pre-K (under 4) or adult segments</li>
+                                            <li><strong>Platform Dependency:</strong> Reliance on VEX/LEGO ecosystems</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-3">
+                                    <div class="bg-purple-50 border-l-4 border-purple-400 p-4">
+                                        <h5 class="font-semibold text-purple-800 mb-2">Strategic Moat: "Path to Prestige"</h5>
+                                        <p class="text-sm mb-2">Ecorobo's emphasis on robotics competitions creates a powerful defensive barrier:</p>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Competitions provide verifiable, marketable achievements</li>
+                                            <li>Success enhances university application portfolios</li>
+                                            <li>Creates emotional appeal beyond skill development</li>
+                                            <li>Difficult for general schools to replicate specialized training</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                                        <h5 class="font-semibold text-yellow-800 mb-2">Market Position Analysis</h5>
+                                        <p class="text-sm">Ecorobo occupies a unique position as a "necessary supplement" rather than a replacement for traditional education, allowing it to capture education budget without competing at full institutional scale.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                evo: `
+                    <div class="content-card bg-amber-50 border-amber-200">
+                        <h3 class="font-bold text-lg text-amber-800">Methodological Note</h3>
+                        <p class="text-amber-900">The "EVO Eduschool" profile is a constructed, representative competitor synthesized from market data to model a credible and formidable K-12 integrated threat. This analysis incorporates real market data including fee structures and educational approaches to ensure realistic market assessment.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="font-bold text-xl text-green-800 mb-3">EVO Eduschool: The Comprehensive Technology & Creativity School</h3>
+                        
+                        <div class="bg-green-50 border-l-4 border-green-400 p-4 mb-4">
+                            <h4 class="font-semibold text-green-800 mb-2">Core Business Model</h4>
+                            <p class="text-green-900">Comprehensive K-12 international/bilingual school with integrated technology and creativity curriculum, designed to create a powerful "ecosystem lock-in" effect for families.</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-800 mb-2">Educational Scope</h4>
+                                <ul class="text-sm list-disc list-inside space-y-1">
+                                    <li><strong>Age Range:</strong> Pre-1 to Grade 12 (3-18 years)</li>
+                                    <li><strong>Dual Curriculum:</strong> Vietnamese + International pathways</li>
+                                    <li><strong>Core Differentiator:</strong> Deep technology & creativity integration</li>
+                                    <li><strong>Philosophy:</strong> "Vietnam's leading technology school"</li>
+                                </ul>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-purple-800 mb-2">Value Proposition</h4>
+                                <p class="text-sm mb-2"><strong>"All-in-One Solution"</strong> & Consolidated Value</p>
+                                <ul class="text-sm list-disc list-inside space-y-1">
+                                    <li>Eliminates need for external enrichment centers</li>
+                                    <li>Superior integrated education experience</li>
+                                    <li>Comparable "Total Cost of Education"</li>
+                                    <li>Career preparation from early age</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-yellow-50 border border-yellow-200 rounded p-3">
+                            <p class="text-sm"><strong>Strategic Positioning:</strong> EVO positions itself as a "destination" institution that justifies significant investment through comprehensive, future-ready education that prepares students for the digital age while maintaining academic excellence.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Core Programs & Curriculum Architecture</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="mb-4">
+                                    <h5 class="font-semibold text-green-800 mb-2">Three-Track Program Structure</h5>
+                                    <div class="grid md:grid-cols-3 gap-4">
+                                        <div class="bg-blue-50 p-3 rounded">
+                                            <h6 class="font-semibold text-blue-700 mb-2">EVO KID (Ages 6-15)</h6>
+                                            <ul class="text-sm list-disc list-inside space-y-1">
+                                                <li>Computer & technology fundamentals</li>
+                                                <li>Introduction to programming concepts</li>
+                                                <li>Digital literacy development</li>
+                                                <li>Creative technology projects</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-green-50 p-3 rounded">
+                                            <h6 class="font-semibold text-green-700 mb-2">EVO TEEN (Ages 16-18)</h6>
+                                            <ul class="text-sm list-disc list-inside space-y-1">
+                                                <li>Advanced programming languages</li>
+                                                <li>Java, C++, Python, JavaScript</li>
+                                                <li>Academic preparation focus</li>
+                                                <li>Career pathway development</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-purple-50 p-3 rounded">
+                                            <h6 class="font-semibold text-purple-700 mb-2">EVO ADULT (18+ years)</h6>
+                                            <ul class="text-sm list-disc list-inside space-y-1">
+                                                <li>Professional development tracks</li>
+                                                <li>Backend & frontend development</li>
+                                                <li>Mobile app development</li>
+                                                <li>Career transition support</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h5 class="font-semibold text-purple-800 mb-2">Flagship Robotics Program</h5>
+                                    <div class="bg-orange-50 border-l-4 border-orange-400 p-4">
+                                        <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                            <div>
+                                                <h6 class="font-semibold mb-1">Program Structure</h6>
+                                                <ul class="list-disc list-inside space-y-1">
+                                                    <li><strong>Duration:</strong> 12 months, 45 sessions</li>
+                                                    <li><strong>Schedule:</strong> 1 session/week, 2 hours each</li>
+                                                    <li><strong>Class Size:</strong> 3-5 students (personalized attention)</li>
+                                                    <li><strong>Equipment:</strong> VEX GO robotics kits</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h6 class="font-semibold mb-1">Two-Year Progression</h6>
+                                                <ul class="list-disc list-inside space-y-1">
+                                                    <li><strong>Year 1:</strong> Foundational robotics assembly & programming (ages 6+)</li>
+                                                    <li><strong>Year 2:</strong> Complex robot design & real-world applications (ages 7+)</li>
+                                                    <li><strong>Integration:</strong> Mathematics, physics, control systems</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-yellow-50 border border-yellow-200 rounded p-4">
+                                    <h5 class="font-semibold text-yellow-800 mb-2">Unique Selling Proposition</h5>
+                                    <p class="text-sm">Comprehensive age-spanning curriculum from children through adults, combined with competition opportunities and partnerships with technology companies for real-world experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Pricing Structure & Financial Model</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="mb-4">
+                                    <h5 class="font-semibold text-red-800 mb-2">High-End Fee Structure</h5>
+                                    <div class="grid md:grid-cols-3 gap-4">
+                                        <div class="bg-red-50 p-4 rounded">
+                                            <h6 class="font-semibold text-red-700 mb-2">One-Time Fees</h6>
+                                            <ul class="text-sm space-y-1">
+                                                <li><strong>Entry Tests:</strong> 1-3M VND</li>
+                                                <li><strong>Registration:</strong> 15M VND</li>
+                                                <li><strong>Facilities:</strong> 15M VND</li>
+                                                <li class="text-xs italic">Total upfront: ~30M VND</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-blue-50 p-4 rounded">
+                                            <h6 class="font-semibold text-blue-700 mb-2">Annual Tuition</h6>
+                                            <ul class="text-sm space-y-1">
+                                                <li><strong>Primary (Bilingual):</strong> 204M VND/year</li>
+                                                <li><strong>High School (International):</strong> 406M+ VND/year</li>
+                                                <li class="text-xs italic">Monthly equivalent: 20-40M VND</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-green-50 p-4 rounded">
+                                            <h6 class="font-semibold text-green-700 mb-2">Additional Fees</h6>
+                                            <ul class="text-sm space-y-1">
+                                                <li><strong>Meals:</strong> 20-28M VND/year</li>
+                                                <li><strong>Bus (2-way):</strong> 14.8M VND/semester</li>
+                                                <li><strong>Uniforms & Books:</strong> Separate charges</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h5 class="font-semibold text-purple-800 mb-2">Current Robotics Program Pricing</h5>
+                                    <div class="bg-purple-50 border-l-4 border-purple-400 p-4">
+                                        <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                            <div>
+                                                <h6 class="font-semibold mb-1">Trial & Promotional</h6>
+                                                <ul class="list-disc list-inside space-y-1">
+                                                    <li>Free trial sessions (originally 399,000 VND)</li>
+                                                    <li>Aggressive promotional campaigns</li>
+                                                    <li>Early registrant targeting</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h6 class="font-semibold mb-1">Estimated Full Program</h6>
+                                                <ul class="list-disc list-inside space-y-1">
+                                                    <li>300,000-500,000 VND per month</li>
+                                                    <li>Consistent with Vietnamese STEAM market rates</li>
+                                                    <li>Long-term program commitments</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-yellow-50 border border-yellow-200 rounded p-4">
+                                    <h5 class="font-semibold text-yellow-800 mb-2">Value Justification Strategy</h5>
+                                    <p class="text-sm">High pricing justified by comprehensive "all-in-one" solution that eliminates need for multiple tutoring centers. Single fee provides integrated education, reducing total family education spending while offering superior convenience and coherence.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Customer Segments & Target Market</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="grid md:grid-cols-3 gap-4 mb-4">
+                                    <div class="bg-blue-50 p-4 rounded">
+                                        <h5 class="font-semibold text-blue-800 mb-2">Children (6-15)</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Technology introduction</li>
+                                            <li>Foundational programming</li>
+                                            <li>Creative development focus</li>
+                                            <li>Academic skill building</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-green-50 p-4 rounded">
+                                        <h5 class="font-semibold text-green-800 mb-2">Teenagers (16-18)</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Advanced programming</li>
+                                            <li>Academic preparation</li>
+                                            <li>Career pathway guidance</li>
+                                            <li>University readiness</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-purple-50 p-4 rounded">
+                                        <h5 class="font-semibold text-purple-800 mb-2">Adults (18+)</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Professional development</li>
+                                            <li>Career transition support</li>
+                                            <li>Technology upskilling</li>
+                                            <li>Industry partnerships</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-orange-50 border-l-4 border-orange-400 p-4 mb-4">
+                                    <h5 class="font-semibold text-orange-800 mb-2">Marketing Focus & Positioning</h5>
+                                    <p class="text-sm mb-2">EVO positions itself as "Vietnam's leading technology school" developing both technical skills and mindset for the digital age:</p>
+                                    <ul class="text-sm list-disc list-inside space-y-1">
+                                        <li><strong>Career Preparation:</strong> Emphasis on practical skills for future employment</li>
+                                        <li><strong>Technology Leadership:</strong> Developing leaders in the digital transformation</li>
+                                        <li><strong>Holistic Development:</strong> Technical skills combined with soft skills</li>
+                                        <li><strong>Real-World Application:</strong> Industry partnerships for practical experience</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-gray-50 border border-gray-200 rounded p-4">
+                                    <h5 class="font-semibold text-gray-800 mb-2">Observed Clientele Profile</h5>
+                                    <p class="text-sm">Based on testimonials, EVO attracts families seeking comprehensive technology education that bridges academic learning with practical career preparation. Parents value structured progression and real-world application focus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Brand Perception & Market Presence</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-blue-50 p-4 rounded">
+                                        <h5 class="font-semibold text-blue-800 mb-2">Online Presence & Engagement</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Main Website:</strong> kids.evo.edu.vn (children's programs)</li>
+                                            <li><strong>Corporate Site:</strong> evo.edu.vn (all age segments)</li>
+                                            <li><strong>Social Media:</strong> Active Facebook presence</li>
+                                            <li><strong>Professional Multi-Platform Strategy</strong></li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-green-50 p-4 rounded">
+                                        <h5 class="font-semibold text-green-800 mb-2">Physical Presence</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Location:</strong> Floor 3, Dolphin Plaza</li>
+                                            <li><strong>Address:</strong> 06 Nguyen Hoang, My Dinh, Nam Tu Liem</li>
+                                            <li><strong>Contact:</strong> Hotline 0847 432 432</li>
+                                            <li><strong>Accessibility:</strong> Central Hanoi location</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h5 class="font-semibold text-purple-800 mb-2">Community Reputation & Credibility</h5>
+                                    <div class="grid md:grid-cols-3 gap-3">
+                                        <div class="bg-purple-50 p-3 rounded">
+                                            <h6 class="font-semibold text-purple-700 text-sm mb-1">Competition Success</h6>
+                                            <p class="text-xs">Students participate in robotics championships organized by EVO</p>
+                                        </div>
+                                        <div class="bg-yellow-50 p-3 rounded">
+                                            <h6 class="font-semibold text-yellow-700 text-sm mb-1">Corporate Partnerships</h6>
+                                            <p class="text-xs">Partnerships with reputable technology companies</p>
+                                        </div>
+                                        <div class="bg-red-50 p-3 rounded">
+                                            <h6 class="font-semibold text-red-700 text-sm mb-1">Industry Recognition</h6>
+                                            <p class="text-xs">Positioned as leading tech education institution in Vietnam</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-green-50 border-l-4 border-green-400 p-4">
+                                    <h5 class="font-semibold text-green-800 mb-2">Parent & Student Testimonials</h5>
+                                    <p class="text-sm">Strong parent satisfaction with visible student progress in creativity, logical thinking, and technological confidence. Parents praise professional learning environment and measurable skill development.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Competitive Advantages & Strategic Analysis</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-green-50 p-4 rounded">
+                                        <h5 class="font-semibold text-green-800 mb-2">Key Strengths</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Comprehensive Age Coverage:</strong> Only competitor serving 6-18+ years</li>
+                                            <li><strong>Multi-Track Programming:</strong> Recreational + professional paths</li>
+                                            <li><strong>Industry Connections:</strong> Real-world application opportunities</li>
+                                            <li><strong>Proven Methodology:</strong> 6+ years operation since 2019</li>
+                                            <li><strong>Competition Integration:</strong> Built-in competitive opportunities</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-red-50 p-4 rounded">
+                                        <h5 class="font-semibold text-red-800 mb-2">Key Weaknesses</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Geographic Distance:</strong> Central Hanoi vs. direct Ecopark presence</li>
+                                            <li><strong>Broad Focus:</strong> May lack specialized depth of dedicated centers</li>
+                                            <li><strong>Adult Program Emphasis:</strong> Resources divided across age groups</li>
+                                            <li><strong>Limited Physical Presence:</strong> Single location accessibility</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-3">
+                                    <div class="bg-purple-50 border-l-4 border-purple-400 p-4">
+                                        <h5 class="font-semibold text-purple-800 mb-2">Primary Competitive Threat</h5>
+                                        <p class="text-sm mb-2">EVO represents the most significant competitive threat due to:</p>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Comprehensive market coverage (all age groups)</li>
+                                            <li>Established brand recognition (6+ years operation)</li>
+                                            <li>Professional infrastructure and corporate partnerships</li>
+                                            <li>Multi-track offerings (recreational + professional)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="bg-orange-50 border-l-4 border-orange-400 p-4">
+                                        <h5 class="font-semibold text-orange-800 mb-2">Market Position Analysis</h5>
+                                        <p class="text-sm">EVO's comprehensive approach and established presence make it formidable competitor with potential for market expansion into Ecopark, representing both institutional credibility and operational scale advantages.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Operations & Strategic Positioning</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-blue-50 p-4 rounded">
+                                        <h5 class="font-semibold text-blue-800 mb-2">Operational Model</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Program Structure:</strong> 12-month commitments with weekly sessions</li>
+                                            <li><strong>Class Sizes:</strong> 3-5 students ensuring personalized attention</li>
+                                            <li><strong>Scheduling:</strong> Weekday after-school + weekend intensive options</li>
+                                            <li><strong>Curriculum:</strong> Multi-year advancement from basic to advanced</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-green-50 p-4 rounded">
+                                        <h5 class="font-semibold text-green-800 mb-2">Marketing Channels</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Digital Marketing:</strong> Professional websites for different segments</li>
+                                            <li><strong>Social Media:</strong> Active Facebook community engagement</li>
+                                            <li><strong>Promotional Campaigns:</strong> Aggressive pricing to attract new students</li>
+                                            <li><strong>Corporate Partnerships:</strong> Industry connections for credibility</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h5 class="font-semibold text-purple-800 mb-2">"Destination" Institution Strategy</h5>
+                                    <div class="bg-purple-50 border-l-4 border-purple-400 p-4">
+                                        <p class="text-sm mb-2">Unlike Ecorobo's convenience model, EVO competes as a "destination" institution:</p>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Must justify travel and investment through excellence</li>
+                                            <li>Campus serves as primary marketing tool</li>
+                                            <li>Professional corporate image in premium office complex</li>
+                                            <li>Targets parents preferring integrated solutions over mix-and-match</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-red-50 border-l-4 border-red-400 p-4">
+                                    <h5 class="font-semibold text-red-800 mb-2">Threat to Niche Players</h5>
+                                    <p class="text-sm">Key marketing challenge: convince parents that integrated program is advanced enough to make specialists like Ecorobo redundant. Each student EVO attracts represents potential customer lost for entire after-school market.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                opportunities: `
+                    <div class="content-card">
+                        <h3 class="font-bold text-xl text-purple-800 mb-3">Strategic Market Analysis: Gaps & Opportunities</h3>
+                        <div class="bg-purple-50 border-l-4 border-purple-400 p-4 mb-4">
+                            <h4 class="font-semibold text-purple-800 mb-2">Updated Market Context</h4>
+                            <p class="text-purple-900">With EVO Eduschool's inclusion in the competitive landscape, market gaps shift significantly, revealing both increased competition and clearer opportunities for differentiation through local presence and specialized programming.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Revised Biggest Market Gaps</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-blue-50 p-4 rounded">
+                                        <h5 class="font-semibold text-blue-800 mb-2">Primary Market Gaps</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Ecopark-Specific Presence:</strong> No competitor operates directly within Ecopark</li>
+                                            <li><strong>Weekend/Holiday Intensive Programs:</strong> Limited flexible scheduling options</li>
+                                            <li><strong>Academic Integration:</strong> Gap for STEAM supporting school curriculum</li>
+                                            <li><strong>Mid-Market Pricing:</strong> Space between basic community programs and premium offerings</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-green-50 p-4 rounded">
+                                        <h5 class="font-semibold text-green-800 mb-2">Untapped Segments</h5>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Early Years (3-5):</strong> Dedicated play-based technology programs</li>
+                                            <li><strong>Adult Market (18+):</strong> Professional development in Data Analytics, UI/UX, Digital Marketing</li>
+                                            <li><strong>University Students:</strong> Practical programming and tech skills</li>
+                                            <li><strong>Family Programs:</strong> Parent-child collaborative technology workshops</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+                                    <h5 class="font-semibold text-yellow-800 mb-2">The "Premium Plus" Experience Gap</h5>
+                                    <p class="text-sm mb-2">Current providers focus on curriculum and outcomes but miss the experiential component valued by Ecopark residents:</p>
+                                    <ul class="text-sm list-disc list-inside space-y-1">
+                                        <li>Community hub experience beyond transactional classrooms</li>
+                                        <li>Parent workshops and comfortable waiting spaces</li>
+                                        <li>Superior digital communication and progress tracking</li>
+                                        <li>Family-oriented technology events and showcases</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-orange-50 border border-orange-200 rounded p-4">
+                                    <h5 class="font-semibold text-orange-800 mb-2">Subject Niche Opportunities</h5>
+                                    <p class="text-sm">Clear gap for broader technology curriculum beyond competitive robotics, including Creative Technology (Digital Art, 3D Modeling, Video Game Design), Advanced Software Development, and Applied AI for teens and adults.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Primary Competitive Threats</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-red-50 p-4 rounded">
+                                        <h5 class="font-semibold text-red-800 mb-2">Ecorobo STEM Lab</h5>
+                                        <p class="text-sm mb-2"><strong>Primary threat for K-12 Technology/STEAM market</strong></p>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Hyper-local focus:</strong> First-mover advantage in Ecopark</li>
+                                            <li><strong>Tangible value:</strong> Competition awards and achievements</li>
+                                            <li><strong>Deep expertise:</strong> Dual-center model for teaching and competition</li>
+                                            <li><strong>Community trust:</strong> Established local reputation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-purple-50 p-4 rounded">
+                                        <h5 class="font-semibold text-purple-800 mb-2">EVO Eduschool</h5>
+                                        <p class="text-sm mb-2"><strong>Most significant comprehensive threat</strong></p>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Market coverage:</strong> All age groups from children through adults</li>
+                                            <li><strong>Brand recognition:</strong> 6+ years established operation</li>
+                                            <li><strong>Professional infrastructure:</strong> Corporate partnerships and modern facilities</li>
+                                            <li><strong>Multi-track offerings:</strong> Recreational and professional paths</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-gray-50 border border-gray-200 rounded p-4">
+                                    <h5 class="font-semibold text-gray-800 mb-2">Competitive Landscape Analysis</h5>
+                                    <p class="text-sm">The competitive environment reveals a strategic battle between specialized convenience (Ecorobo) and comprehensive integration (EVO), creating opportunities for differentiated approaches that combine local presence with unique value propositions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Strategic Opportunities for Differentiation</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="space-y-4">
+                                    <div class="bg-green-50 border-l-4 border-green-400 p-4">
+                                        <h5 class="font-semibold text-green-800 mb-2">1. Ecopark-Native Presence</h5>
+                                        <p class="text-sm">Establish the only Technology/STEAM education center directly within Ecopark, eliminating travel requirements and building stronger community integration than existing competitors.</p>
+                                    </div>
+                                    
+                                    <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+                                        <h5 class="font-semibold text-blue-800 mb-2">2. Academic Integration Partnership</h5>
+                                        <p class="text-sm">Partner with local schools (Edison, Greenfield) to provide curriculum-supportive STEAM programs rather than purely supplementary education, creating a strategic alliance model.</p>
+                                    </div>
+                                    
+                                    <div class="bg-purple-50 border-l-4 border-purple-400 p-4">
+                                        <h5 class="font-semibold text-purple-800 mb-2">3. Family-Centric Programming</h5>
+                                        <p class="text-sm">Develop parent-child collaborative programs and family technology workshops that neither EVO's individual-focused model nor Ecorobo's child-only approach addresses.</p>
+                                    </div>
+                                    
+                                    <div class="bg-orange-50 border-l-4 border-orange-400 p-4">
+                                        <h5 class="font-semibold text-orange-800 mb-2">4. Flexible Commitment Options</h5>
+                                        <p class="text-sm">Offer shorter-term, project-based learning modules alongside traditional long-term programs to serve diverse family preferences and scheduling needs.</p>
+                                    </div>
+                                    
+                                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                                        <h5 class="font-semibold text-yellow-800 mb-2">5. Community-Embedded Events</h5>
+                                        <p class="text-sm">Leverage Ecopark's residential community for regular technology showcases, maker fairs, and neighborhood STEAM events that established competitors have not addressed.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Actionable Market Entry Strategy</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="mb-4">
+                                    <h5 class="font-semibold text-purple-800 mb-2">Multi-Pronged Strategy Framework</h5>
+                                    <p class="text-sm mb-3">Successful market entry requires differentiation on curriculum, elevated customer experience, and deep community integration.</p>
+                                </div>
+                                
+                                <div class="space-y-4">
+                                    <div class="bg-blue-50 border border-blue-200 rounded p-4">
+                                        <h5 class="font-semibold text-blue-800 mb-2">Recommendation 1: "Whole-of-Life" Technology Curriculum</h5>
+                                        <p class="text-sm mb-2">Avoid direct confrontation with Ecorobo. Flank them by establishing a broader, more comprehensive definition of technology education:</p>
+                                        <div class="grid md:grid-cols-3 gap-3 mt-3">
+                                            <div class="bg-white p-3 rounded">
+                                                <h6 class="font-semibold text-sm text-blue-700">Tech Tots (3-5)</h6>
+                                                <p class="text-xs">Play-based creative program using age-appropriate tools for pre-coding logic and digital storytelling</p>
+                                            </div>
+                                            <div class="bg-white p-3 rounded">
+                                                <h6 class="font-semibold text-sm text-green-700">K-12 Tech Creators</h6>
+                                                <p class="text-xs">Broad STEAM curriculum including robotics, coding, game design, digital art, and 3D printing</p>
+                                            </div>
+                                            <div class="bg-white p-3 rounded">
+                                                <h6 class="font-semibold text-sm text-purple-700">Adult Tech Accelerator</h6>
+                                                <p class="text-xs">Professional development courses: Python for Data Analysis, UI/UX Fundamentals for university students and professionals</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-green-50 border border-green-200 rounded p-4">
+                                        <h5 class="font-semibold text-green-800 mb-2">Recommendation 2: "Super-Premium" Position Through Experience</h5>
+                                        <p class="text-sm mb-2">Justify top-tier pricing through superior value extending beyond classroom walls:</p>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li><strong>Flagship Location:</strong> Premium area like Grand Marina or Swanlake Onsen</li>
+                                            <li><strong>Aspirational Interior:</strong> Modern tech company workspace design</li>
+                                            <li><strong>Industry-Experienced Instructors:</strong> Verifiable programming, design, or data science backgrounds</li>
+                                            <li><strong>"Premium Plus" Service:</strong> Parent digital dashboards, monthly performance reports, scheduled consultations</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="bg-orange-50 border border-orange-200 rounded p-4">
+                                        <h5 class="font-semibold text-orange-800 mb-2">Recommendation 3: Hyper-Local Community Launch (90-Day Strategy)</h5>
+                                        <p class="text-sm mb-2">In tight-knit communities like Ecopark, trust and word-of-mouth are most powerful marketing channels:</p>
+                                        <div class="grid md:grid-cols-3 gap-3 mt-3">
+                                            <div class="bg-white p-3 rounded">
+                                                <h6 class="font-semibold text-sm text-orange-700">Engage Online</h6>
+                                                <p class="text-xs">Active participation in "Cộng đồng cư dân Ecopark" Facebook groups with valuable content sharing</p>
+                                            </div>
+                                            <div class="bg-white p-3 rounded">
+                                                <h6 class="font-semibold text-sm text-blue-700">Physical Presence</h6>
+                                                <p class="text-xs">Free workshops at EcoSunday market, "Family Hour of Code" sessions at community hubs</p>
+                                            </div>
+                                            <div class="bg-white p-3 rounded">
+                                                <h6 class="font-semibold text-sm text-green-700">Strategic Alliances</h6>
+                                                <p class="text-xs">Partner with K-12 schools to run specialized after-school clubs and guest lectures</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button font-semibold">
+                                <span>Future Market Evolution & Trends</span>
+                                <span class="accordion-arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="space-y-4">
+                                    <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+                                        <h5 class="font-semibold text-blue-800 mb-2">AI Revolution in Education</h5>
+                                        <p class="text-sm mb-2">Market will evolve beyond basic programming and robotics:</p>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>AI-driven personalized learning and tutoring</li>
+                                            <li>Curriculum adaptation and skill assessment</li>
+                                            <li>First-mover advantage for AI integration in pedagogy</li>
+                                            <li>Teaching students to work with AI tools effectively</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="bg-green-50 border-l-4 border-green-400 p-4">
+                                        <h5 class="font-semibold text-green-800 mb-2">Mental Health & Wellbeing Focus</h5>
+                                        <p class="text-sm mb-2">As educational "arms race" intensifies, parent focus may shift toward mental health:</p>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Integration of mental health support programs</li>
+                                            <li>Mindfulness and social-emotional learning (SEL)</li>
+                                            <li>Stress reduction and balanced development approaches</li>
+                                            <li>Alignment with Eco Retreat wellness messaging</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="bg-purple-50 border-l-4 border-purple-400 p-4">
+                                        <h5 class="font-semibold text-purple-800 mb-2">Market Saturation & Consolidation</h5>
+                                        <p class="text-sm mb-2">Large number of providers suggests approaching market saturation:</p>
+                                        <ul class="text-sm list-disc list-inside space-y-1">
+                                            <li>Potential consolidation with larger entities acquiring specialists</li>
+                                            <li>"Quality race" where only well-operated, reputable organizations survive</li>
+                                            <li>Importance of building strong, defensible brand positions</li>
+                                            <li>Need for clear differentiation and superior execution</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-yellow-50 border border-yellow-200 rounded p-4 mt-4">
+                                    <h5 class="font-semibold text-yellow-800 mb-2">Strategic Conclusion</h5>
+                                    <p class="text-sm">The future of Ecopark's education market will be shaped by AI innovation, mental health awareness, and market consolidation. Success requires building strong competitive moats through community integration, specialized expertise, and superior customer experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            };
+
+            // Load content into panels
+            Object.keys(originalContent).forEach(tabName => {
+                const panel = document.getElementById(`${tabName}-content`);
+                if (panel) {
+                    panel.innerHTML = originalContent[tabName];
+                }
+            });
+        }
+
+        function setupAccessibilityEnhancements() {
+            // Add skip links functionality
+            const skipLink = document.querySelector('a[href="#main-content"]');
+            if (skipLink) {
+                skipLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.getElementById('main-content');
+                    if (target) {
+                        target.focus();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            }
+
+            // Add high contrast mode detection
+            if (window.matchMedia && window.matchMedia('(prefers-contrast: high)').matches) {
+                document.body.classList.add('high-contrast');
+            }
+
+            // Add reduced motion detection
+            if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.body.classList.add('reduced-motion');
+            }
+        }
+    </script>
+</body>
+</html> 
